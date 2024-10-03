@@ -44,8 +44,8 @@ main {
     }
     @media (max-width: 30em) {
       width: 98.6vw;
-      width: 99%;
-      /*max-width: 100vw;*/
+      width: 100%;
+      max-width: 100vw;
     }
 }
 header h3 {
@@ -344,7 +344,8 @@ header h3 {
     }
     /* BAD CODE? */
     @media (max-width: 30em) {
-      margin-right: -0.19em;
+      /*margin-right: -0.19em;*/
+      border: none;
     }
 
     header {
