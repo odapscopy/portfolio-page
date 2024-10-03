@@ -335,7 +335,7 @@ header h3 {
     /*width: 75%;*/
     width: 79%;
     float: right;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
     /*margin-top: 5vh;*/
     margin-top: 0vh; /* redundant code though */
     /*height: 100vh;*/
