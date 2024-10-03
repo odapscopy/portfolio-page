@@ -1,7 +1,10 @@
 /* Form CSS: https://codepen.io/AlexKP/pen/xJjYwZ */
 /* Form CSS sample code: https://devsnap.me/css-contact-forms */
 /* Copy presentation & download thumbnail code: https://codepen.io/nathanlong/pen/rMyaPQ */
-
+* {
+  padding: 0;
+  margin: 0;
+}
 :root {
   --img-size: 15rem; /* ~approximately 240px */
   --img-width-size: 200px;
@@ -28,21 +31,45 @@ html {
   background-color: #eee6e6;
   /*background: #36383F;
   background: #1E1E23;*/
+
+  @media (max-width: 60em) {
+    background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
+  }
 }
 body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    max-width: 100vw;
 }
 main {
-    width: 100vw; /* I suspect this is redundant */
+    width: 99vw; /* I suspect this is redundant */
     height: 100vh; /* I suspect that this is redundant */
+
+    @media (max-width: 60em) {
+      width: 100vw;
+    }
+    @media (max-width: 30em) {
+      width: 98.6vw;
+      width: 100vw;
+      /*max-width: 100vw;*/
+    }
+}
+header h3 {
+  color: #404954;
+  color: #204954;
+  color: #304954;
+  color: #304654;
+  color: rgba(0, 0, 0, 0.646);
+  font-weight: 700;
 }
 .sidebar {
   position: fixed;
   width: 25%;
   width: 24.2%;
   width: 20%;
+  width: 19.4%;
+  width: 19.6%;
   height: 100vh;
   margin-left: 20px;
   background: #312450; /* controls the color of the sidebar/naviagation panel */
@@ -125,6 +152,11 @@ main {
             display: flex;
             width: 40px;
             height: 32px;
+            /*width: 80px;
+            height: 64px;*/
+            width: 32px;
+            margin-top: -12px; /* mobile menu fix */
+            margin-left: -3px; /* mobile menu fix */
             position: absolute;
             cursor: pointer;
             opacity: 0;
@@ -207,7 +239,7 @@ main {
 /* Please place any menu toggler code right above this code block*/
 .nav #menu-toggle input, span{
     @media(min-width: 60em) {
-        margin-right: -110vw; /* Please take note! */
+        margin-right: -110vw; /* Please take note! It makes the radio-box input disappear */
     }
 }
 .nav ul {
@@ -249,15 +281,37 @@ main {
     opacity: 1;
   }
 }
-.nav ul li.active a {
+.nav ul li a.active {
   color: greenyellow;
   color: green;
   color: white;
+  opacity: 1;
+  font-size: 18.5px;
   /*opacity: 0.6;*/
   /*opacity: 0.8;*/
   @media (max-width: 60em) {
     color: green;
-    opacity: 0.6;
+    /*opacity: 0.6;*/
+    color:  #36383F;
+    font-size: 12.5px;
+  }
+  /*@media (min-width: 60em) {
+    color: white;
+  }*/
+}
+.nav ul li a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+}
+.nav ul li.active:hover a {
+  @media (max-width: 60em) {
+    color: #36383F;
   }
 }
 .nav ul li:not(.active)::after {
@@ -303,10 +357,17 @@ main {
         width: 100%;
         margin-top: 15vh;
         background: none;
+        border-top: none;
+    }
+    /* BAD CODE? */
+    @media (max-width: 30em) {
+      margin-right: -0.19em;
     }
 
     header {
-      border: 1px solid blue;
+      /*border: 1px solid black;*/
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
       margin-top: 5vh;
       display: flex;
       flex-direction: column;
@@ -321,7 +382,7 @@ main {
 
     header h1#brand-name {
       width: 80%;
-      border: 1px solid brown;
+      /*border: 1px solid brown;*/
       font-family: "Sree Krushnadevaraya", serif;
       font-weight: normal;
       margin: 0;
@@ -359,53 +420,13 @@ main {
       width: 240px;
       height: 259px; /* or 268px */
     }
-    
-    .containerr {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      /*height: 100%;*/
-      /*height: 25vh;*/
-      /*border: 1px solid black;*/
-      margin-top: 10vh;
-      min-height: 50vh;
-      background: rgb(79, 119, 100);
-      background: rgb(85, 119, 103);
-      border-radius: 20px;
-      /*width: 87%;*/
-      width: 68%;
-      margin: auto;
-      margin-top: 10vh;
-
-      @media (max-width: 60em) {
-        /*height: 25vh;*/
-        width: 80%;
-        margin-top: 8vh;
-      }
-    }
-    .containerr a {
-      position: relative;
-      
-      img {
-        width: 48px;
-        height: 48px;
-      }
-    }
-    .containerr p {
-      /*text-transform: uppercase;*/
-      font-size: 1em;
-      /*letter-spacing: 0.1em;*/
-      color: #FFF;
-      color: #010101;
-      color: white;
-      /*font-weight: bold;*/
-      margin-top: 20px;
-      text-align: center
-    }
 
     .hero-container {
-      margin: 20px; border: 1px solid brown; background-color: whitesmoke; padding-bottom: 9vh;
+      margin: 20px; 
+      border: 1px solid brown;
+      border-radius: 4px;
+      background-color: whitesmoke; 
+      padding-bottom: 9vh;
     }
     .container-1 {
       display: flex;
@@ -471,7 +492,7 @@ main {
 
     /*Achieved Linear-gradient code goes here*/
     
-    .container-1 div#container-1-second-box {
+    .container-1 div.container-1-second-box {
       /*border: 1px solid pink;*/
       border-radius: 4px;
       border-radius: 6px;
@@ -497,6 +518,28 @@ main {
         width: 80%;
       }
     }
+
+    .pitch-container-heading {
+      width: 100%;
+      /*margin-top: 0.6em;
+      margin-top: 9.5vh;*/
+      margin-top: 10.5vh;
+      border: 1px solid black;
+      padding-top: 4vh;
+      border-left: none;
+      border-bottom: none;
+      h2 {
+        color: #404954;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -0.1rem;
+        display: inline-block;
+        /*border: 1px solid red;*/
+        width: 96.5%;
+        text-align: center;
+        /*sborder: 1px solid yellow;*/
+      }
+    }
     
     .container-2 {
       display: flex;
@@ -507,8 +550,14 @@ main {
       /*height: 100%;*/
       /*height: 25vh;*/
       border: 1px solid black;
+      border-top: none;
+      border-right: none;
+      border-left: none;
       margin-top: 10vh;
+      margin-top: 0.2vh;
       /*text-align: justify;*/
+      padding: 10vh;
+      padding-top: 40px;
 
       @media (max-width: 60em) {
         flex-direction: column;
@@ -527,7 +576,7 @@ main {
       /*letter-spacing: 0.1em;*/
       color: #FFF;
       color: black;
-      border: 1px solid white;
+      /*border: 1px solid white;*/
       /*font-weight: bold;*/
       padding-left: 8px;
       padding-right: 8px;
@@ -562,6 +611,23 @@ main {
       background: #fc2;
       border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
     }
+    /* End of CONTAINER-2 CSS code */
+
+    #services-container-heading {
+      color: #404954;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.1rem;
+      display: inline-block;
+      margin-top: 0;
+      /*border: 1px solid red;*/
+      width: 96.5%;
+      text-align: center;
+      margin-top: 0.6em;
+      margin-top: 9.5vh;
+      margin-top: 10.5vh;
+      /*sborder: 1px solid yellow;*/
+    }
 
     .container-3 {
       display: flex;
@@ -571,18 +637,34 @@ main {
       /*height: 100%;*/
       /*height: 25vh;*/
       border: 1px solid black;
-      margin-top: 10vh;
     }
     .container-3 a {
       position: relative;
     }
+
     /* start of experimental services render code */
-    .container-3, .item-grid {
+    .container-3-extra-mods {
+      max-width: 900px;
+      margin: 100px auto;
+      margin-top: 1vh;
+      position: relative;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+
+      /*@media (max-width: 30em) {
+        max-width: 100vw;
+      }*/
+    }
+    .item-grid {
       max-width: 900px;
       margin: 100px auto;
       position: relative;
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
       overflow: hidden;
+
+      /*@media (max-width: 30em) {
+        max-width: 100vw;
+      }*/
     }
     
     .item {
@@ -590,11 +672,22 @@ main {
       float: left;
       width: 33.3333333333%;
       background-color: #128EF3;
+      background-color: rgba(0, 0, 0, 0.2);
       overflow: hidden;
+
+      @media(max-width: 60em) {
+        font-size: 0.87em;
+      }
 
       @media (max-width: 30em) {
         height: 21vh;
         width: 50%;
+        font-size: 0.7em;
+      }
+
+      a {
+        text-decoration: none;
+        color:rgb(22, 66, 52);
       }
     }
     .item:after {
@@ -656,6 +749,7 @@ main {
       transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1), transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
       transition-delay: 300ms;
       transform: translateY(-20%);
+      text-decoration: none;
     }
     
     .item-text-wrapper {
@@ -690,9 +784,9 @@ main {
       overflow: hidden;
       text-indent: -9999px;
     }
-    /* end of experimental services render code */   
+    /* end CONTAINER-4 CSS code, and experimental services render */   
   
-    /* beginning of contaier-4 code */
+    /* beginning of CONTAINER-4 code */
     .samples-container-heading {
       color: #404954;
       font-size: 2rem;
@@ -704,6 +798,7 @@ main {
       width: 96.5%;
       text-align: center;
       margin-top: 0.6em;
+      /*sborder: 1px solid yellow;*/
     }
 
     .container-4 {
@@ -714,31 +809,74 @@ main {
       /*height: 100%;*/
       /*height: 25vh;*/
       border: 1px solid black;
+      border-left: none;
       margin-top: 10vh;
     }
     
     .container-4 a {
       position: relative;
+      text-decoration: none;
+
+      @media (max-width: 30em) {
+        font-size: 0.96em;
+        font-weight: 500;
+        line-height: 1.4em;
+      }
       
       img {
         width: 48px;
         height: 48px;
       }
     }
-    
+
+    .container-4 p#samples-caption {
+      /*border: 1px solid orangered;*/
+      width: 80%;
+      text-align: justify;
+      margin: auto;
+      margin-top: 1em;
+      margin-bottom: 3.5em;
+      font-size: 17.5px;
+    }
+
     .container-4 p {
-      /*text-transform: uppercase;*/
-      font-size: 1em;
-      /*letter-spacing: 0.1em;*/
-      color: #FFF;
       color: black;
-      /*font-weight: bold;*/
-      margin-top: 20px;
-      text-align: center
+    }
+
+    article {
+      border: 1px solid brown;
+      border-bottom: 1px solid rgba(165, 42, 42, 0.52);
+      border-radius: 4px;
+      width: 80%;
+      text-align: justify;
+      margin: auto;
+      padding: 20px;
+
+      @media (max-width: 30em) {
+        padding: 40px;
+        font-size: 17.5px;
+      }
     }
   
 
-    /* beginning of container-5 code */
+    /* beginning of CONTAINER-5 code */
+
+    #get-in-touch-container-heading {
+      color: #404954;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.1rem;
+      display: inline-block;
+      margin-top: 0;
+      /*border: 1px solid red;*/
+      width: 96.5%;
+      text-align: center;
+      margin-top: 0.6em;
+      margin-top: 9.5vh;
+      margin-top: 10.5vh;
+      /*sborder: 1px solid yellow;*/
+    }
+
     input, button, textarea {
       border: 2px solid rgba(0, 0, 0, 0.6);
       background-image: none;
@@ -777,6 +915,7 @@ main {
 
       @media (max-width: 30em) {
         max-width: 50%;
+        padding: 44px; /* BAD CODE? */
       }
     }
     .feedback-header {
@@ -810,6 +949,7 @@ main {
       /*height: 100%;*/
       /*height: 25vh;*/
       border: 1px solid black;
+      border-left: none;
       margin-top: 10vh;
       margin-bottom: 10vh;
     }
@@ -830,5 +970,43 @@ main {
       /*font-weight: bold;*/
       margin-top: 20px;
       text-align: center
+    }
+
+    footer {
+      /*border: 1px solid black;*/
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /*background-color: white;*/
+
+      @media (max-width: 60em) {
+        margin-top: 0;
+      }
+    }
+
+    footer div {
+      width: 80%;
+      /*border: 1px solid brown;*/
+      font-family: "Sree Krushnadevaraya", serif;
+      font-weight: normal;
+      margin: 0;
+      text-align: center;
+      /*font-size: 5.5rem;
+      font-size: 3.5rem;*/
+      color: var(--color_ink);
+      color: olive;
+      line-height: 1.1;
+      /*margin-top: -1.8rem;*/ /* This may not serve me well */
+      /*@media screen and (min-width: 32.5rem) {
+        font-size: 7rem;;
+      }*/ /* This also may not serve me well*/
+
+      h4 {
+        color: rgba(0, 0, 0, 0.815);
+      }
     }
   }
