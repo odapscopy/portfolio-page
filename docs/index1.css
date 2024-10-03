@@ -39,10 +39,7 @@ main {
     width: 99vw; /* I suspect this is redundant */
     width: 100%;
     height: 100vh; /* I suspect that this is redundant */
-
-    @media (min-width: 30em) {
-      width: 99vw;
-    }
+    
     @media (min-width: 60em) {
       width: 100vw;
     }
