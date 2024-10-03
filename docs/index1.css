@@ -46,7 +46,8 @@ main {
       width: 100vw;
     }
     @media (max-width: 30em) {
-      width: 98.6vw;
+      /*width: 98.6vw;*/
+      width: 100vw;
     }
 }
 header h3 {
