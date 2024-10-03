@@ -38,10 +38,11 @@ body {
 main {
     width: 99vw; /* I suspect this is redundant */
     width: 100%;
-    height: 100vh; /* I suspect that this is redundant */
-    
+    /*height: 100vh;*/ /* I suspect that this is redundant */
+
     @media (min-width: 60em) {
       width: 100vw;
+      width: 100%;
     }
     @media (max-width: 30em) {
       width: 99%;
