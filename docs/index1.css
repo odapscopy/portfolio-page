@@ -1,7 +1,10 @@
 /* Form CSS: https://codepen.io/AlexKP/pen/xJjYwZ */
 /* Form CSS sample code: https://devsnap.me/css-contact-forms */
 /* Copy presentation & download thumbnail code: https://codepen.io/nathanlong/pen/rMyaPQ */
-
+* {
+  padding: 0;
+  margin: 0;
+}
 :root {
   --img-size: 15rem; /* ~approximately 240px */
   --img-width-size: 200px;
@@ -46,8 +49,9 @@ main {
       width: 100vw;
     }
     @media (max-width: 30em) {
-      /*width: 98.6vw;*/
+      width: 98.6vw;
       width: 100vw;
+      /*max-width: 100vw;*/
     }
 }
 header h3 {
@@ -645,6 +649,10 @@ header h3 {
       position: relative;
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
       overflow: hidden;
+
+      /*@media (max-width: 30em) {
+        max-width: 100vw;
+      }*/
     }
     .item-grid {
       max-width: 900px;
@@ -652,6 +660,10 @@ header h3 {
       position: relative;
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
       overflow: hidden;
+
+      /*@media (max-width: 30em) {
+        max-width: 100vw;
+      }*/
     }
     
     .item {
