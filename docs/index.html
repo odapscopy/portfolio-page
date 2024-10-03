@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixed Menu</title>
+    <title>Top Website Copywriter - Oladapo Akinola</title>
     <link rel="stylesheet" href="./index1.css">
 </head>
 
@@ -18,19 +18,21 @@
     <main class="main">
         <aside class="sidebar">
             <nav class="nav">
-                <div id="menuToggle">
+                <!--please note that section here below used to be a div-->
+                <section class="menuToggle" id="menuToggle">
                     <input type="checkbox" name="" id="">
                     <span></span>
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                        <li class="active"><a href="#">Welcome</a></li>
-                        <li><a href="#">My Pitch</a></li><!--Who are we-->
-                        <li><a href="#">My Services</a></li><!--What we do-->
-                        <li><a href="#">Samples</a></li><!--What we do-->
-                        <li><a href="#">Get In Touch</a></li><!--Get in touch-->
+                        <!--<li class="active"><a href="#">Welcome</a></li>-->
+                        <li><a href="#welcome">Welcome</a></li>
+                        <li><a href="#pitch">My Pitch</a></li><!--Who are we-->
+                        <li><a href="#services">My Services</a></li><!--What we do-->
+                        <li><a href="#samples">Samples</a></li><!--What we do-->
+                        <li><a href="#contact-form">Get In Touch</a></li><!--Get in touch-->
                     </ul>
-                </div>
+                </section>
             </nav>
         </aside>
 
@@ -39,54 +41,62 @@
             <header>
                 <h1 id="brand-name">Oladapo Akinola</h1>
                 <h3>
-                    <pre>Your  Winner-Website Copywriter</pre>
+                    <!--<pre>Your Winner-Website Copywriter</pre>-->
+                    Your Winner-Website Copywriter
                 </h3>
             </header>
 
-            <div class="hero-container">
+            <div class="hero-container" id="welcome">
                 <div class="container container-1" style="border: 1px solid pink;">
                     <figure id="selfie-img-container">
-                        <img src="./assets/img/IMG_20230613_125548_629@-1042705997.jpg"
+                        <img src="./assets/img/1_IMG_20230613_125548_629@-1042705997-1.jpg"
                             alt="A selfie photo of a brilliant website copywriter - Oladapo Akinola" id="selfie-img">
                     </figure>
                     <!--<p>Welcome:</p>-->
-                    <div id="container-1-second-box">
+                    <div class="container-1-second-box">
                         <p>What makes me so special is that my work tends to
                             win hearts and budgets!</p>
                     </div>
                 </div>
             </div>
 
-            <!--Inspired By: https://codepen.io/manabox/pen/ybZKyR -->
-            <div class="container container-2">
-                <!--<a target="_blank" href="https://twitter.com/ReisnerShawn">
-                    <img class="social" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
-                </a>-->
-                <!--<p>About Me:</p>-->
-                <div class="circle-1">
-                    <p>I can help you establish clear mission-critical messaging
-                        about your product and/or service offerings.</p>
-                </div>
-                <div class="circle-2">
-                    <p>I get it, your audience are either too busy or innundated with choices to understand and
-                        appreciate
-                        your unique selling point. That's where I come in, why you would want me.</p>
-                </div>
-                <div class="circle-3">
-                    <p>I don't beat around the bush. My words speaks volume. They paint vivid pictures in the mind. I
-                        got
-                        really good at website copywriting from deliberate practice.</p>
-                </div>
-                <div class="circle-1">
-                    <p>Put your best foot forward to make a great impression that touch the
-                        inner
-                        rhythm of your audience. Reach out to me to start your customer acquisition success journey</p>
+            <div id="pitch" style="padding-bottom: 4vh;">
+                <section class="pitch-container-heading">
+                    <h2>Pitch</h2>
+                </section>
+                <!--Inspired By: https://codepen.io/manabox/pen/ybZKyR -->
+                <div class="container container-2">
+                    <!--<a target="_blank" href="https://twitter.com/ReisnerShawn">
+                        <img class="social" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+                    </a>-->
+                    <!--<p>About Me:</p>-->
+                    <div class="circle-1">
+                        <p>I can help you establish clear mission-critical messaging
+                            about your product and/or service offerings.</p>
+                    </div>
+                    <div class="circle-2">
+                        <p>I get it, your audience are either too busy or innundated with choices to understand and
+                            appreciate
+                            your unique selling point. That's where I come in, why you would want me.</p>
+                    </div>
+                    <div class="circle-3">
+                        <p>I don't beat around the bush. My words speaks volume. They paint vivid pictures in the mind.
+                            I
+                            got
+                            really good at website copywriting from deliberate practice.</p>
+                    </div>
+                    <div class="circle-1">
+                        <p>Put your best foot forward to make a great impression that touch the
+                            inner
+                            rhythm of your audience. Reach out to me to start your customer acquisition success journey
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <!-- Inspried By: https://codepen.io/nathanlong/pen/rMyaPQ -->
             <h2 id="services-container-heading">My Services</h2>
-            <div class="container container-3" id="container-3-extra-mods">
+            <div class="container container-3 container-3-extra-mods" id="services">
                 <!--<a target="_blank" href="https://twitter.com/ReisnerShawn">
                     <img class="social" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
                 </a>-->
@@ -114,7 +124,9 @@
                         <!--<a class="item-link"
                             href="https://dribbble.com/shots/2958133-Facebook-in-material-design">Ligula Ridiculus
                             Tortor</a>-->
-                        <a class="item-link" href="https://dribbble.com/shots/2958133-Facebook-in-material-design">Full
+                        <!--<a class="item-link" href="https://dribbble.com/shots/2958133-Facebook-in-material-design">Full
+                            Website copy</a>-->
+                        <a class="item-link" href="#services">Full
                             Website copy</a>
                     </div>
 
@@ -134,7 +146,9 @@
                             </div>
                         </div>
                         <!--<a class="item-link" href="https://dribbble.com/shots/2974913-Home">New Stripe Homepage</a>-->
-                        <a class="item-link" href="https://dribbble.com/shots/2974913-Home">Landing Page website
+                        <!--<a class="item-link" href="https://dribbble.com/shots/2974913-Home">Landing Page website
+                            copy</a>-->
+                        <a class="item-link" href="#services">Landing Page website
                             copy</a>
                     </div>
 
@@ -152,7 +166,8 @@
                             </div>
                         </div>
                         <!--<a class="item-link" href="https://dribbble.com/shots/2974913-Home">Skilledup : Nav</a>-->
-                        <a class="item-link" href="https://dribbble.com/shots/2974913-Home">Website blueprint</a>
+                        <!--<a class="item-link" href="https://dribbble.com/shots/2974913-Home">Website blueprint</a>-->
+                        <a class="item-link" href="#services">Website blueprint</a>
                     </div>
 
                     <div class="item">
@@ -169,7 +184,8 @@
                             </div>
                         </div>
                         <!--<a class="item-link" href="https://dribbble.com/shots/2969126-Some-Icons">Icons</a>-->
-                        <a class="item-link" href="https://dribbble.com/shots/2969126-Some-Icons">Website revision</a>
+                        <!--<a class="item-link" href="https://dribbble.com/shots/2969126-Some-Icons">Website revision</a>-->
+                        <a class="item-link" href="#services">Website revision</a>
                     </div>
 
                     <div class="item">
@@ -188,7 +204,9 @@
                         </div>
                         <!--<a class="item-link" href="https://dribbble.com/shots/2961622-IO-Flux-Creative-Exchange">IO
                             Flux</a>-->
-                        <a class="item-link" href="https://dribbble.com/shots/2961622-IO-Flux-Creative-Exchange">Website
+                        <!--<a class="item-link" href="https://dribbble.com/shots/2961622-IO-Flux-Creative-Exchange">Website
+                            review</a>-->
+                        <a class="item-link" href="#services">Website
                             review</a>
                     </div>
 
@@ -205,12 +223,13 @@
                             </div>
                         </div>
                         <!--<a class="item-link" href="https://dribbble.com/shots/2974913-Home">NASA</a>-->
-                        <a class="item-link" href="https://dribbble.com/shots/2974913-Home">Sales Copy</a>
+                        <!--<a class="item-link" href="https://dribbble.com/shots/2974913-Home">Sales Copy</a>-->
+                        <a class="item-link" href="#services">Sales Copy</a>
                     </div>
                 </div>
             </div>
 
-            <div class="container container-4">
+            <div class="container container-4" id="samples">
                 <!--<a target="_blank" href="https://twitter.com/ReisnerShawn">
                     <img class="social" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
                 </a>-->
@@ -224,7 +243,7 @@
                 <div class="row samples-list">
 
                     <article>
-                        <a class="thumbnail" href="#">
+                        <a class="thumbnail" href="#samples">
                             <div class="placeholder"
                                 style="background: url('https://s16.postimg.org/nxob4cvrp/thumbnail6.jpg') no-repeat;">
                                 <img src="https://s16.postimg.org/nxob4cvrp/thumbnail6.jpg">
@@ -242,7 +261,7 @@
 
                     <!--Sample 2-->
                     <article>
-                        <a class="thumbnail" href="#">
+                        <a class="thumbnail" href="#samples">
                             <div class="placeholder"
                                 style="background: url('https://s16.postimg.org/nxob4cvrp/thumbnail6.jpg') no-repeat;">
                                 <img src="https://s16.postimg.org/nxob4cvrp/thumbnail6.jpg">
@@ -260,7 +279,7 @@
                     </article>
 
                     <article>
-                        <a class="thumbnail" href="#">
+                        <a class="thumbnail" href="./assets/documents/Oladapo_Sales-Copy_Sample.pdf" target="_blank">
                             <div class="placeholder"
                                 style="background: url('https://s16.postimg.org/nxob4cvrp/thumbnail6.jpg') no-repeat;">
                                 <img src="https://s16.postimg.org/nxob4cvrp/thumbnail6.jpg">
@@ -279,15 +298,17 @@
             </div>
 
             <!-- Inspired by: https://codepen.io/AlexKP/pen/xJjYwZ -->
-            <div class="container container-5">
+            <div class="container container-5" id="contact-form">
                 <!--<a target="_blank" href="https://twitter.com/ReisnerShawn">
                     <img class="social" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
                 </a>-->
                 <!--<p>Get In Touch</p>
                 <p>Email contact</p>-->
+                <h2 id="get-in-touch-container-heading">Get In Touch</h2>
+                <p>Drop your email and an optional message for me to schedule a meeting with you.</p>
                 <div class="feedback-card">
                     <div class="feedback-header">
-                        SCHEDULE A MEETING
+                        CONTACT FORM
                     </div>
                     <form class="feedback-body">
                         <input ,type="email" class="feedback-body__email" placeholder="Email" />
@@ -298,7 +319,7 @@
             </div>
 
             <footer>
-                <div>
+                <div id="footer">
                     <h1 id="brand-name">Oladapo Akinola</h1>
                     <h3>
                         <!--<pre>Your  Winner-Website Copywriter</pre>-->
@@ -310,6 +331,8 @@
         </section>
 
     </main>
+
+    <script src="./index1.js"></script>
 </body>
 
 </html>
