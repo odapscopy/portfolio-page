@@ -32,11 +32,12 @@ html {
 }
 body {
     overflow-x: hidden;
-    max-width: 100vw;
+    width: 100%;
 }
 
 main {
     width: 99vw; /* I suspect this is redundant */
+    width: 100%;
     height: 100vh; /* I suspect that this is redundant */
 
     @media (min-width: 60em) {
@@ -45,7 +46,7 @@ main {
     @media (max-width: 30em) {
       width: 98.6vw;
       width: 100%;
-      max-width: 100vw;
+      /*max-width: 100vw;*/
     }
 }
 header h3 {
@@ -990,6 +991,14 @@ header h3 {
       /*@media screen and (min-width: 32.5rem) {
         font-size: 7rem;;
       }*/ /* This also may not serve me well*/
+
+      h1 {
+        padding-bottom: 7px;
+      }
+
+      h3 {
+        padding-bottom: 7px;
+      }
 
       h4 {
         color: rgba(0, 0, 0, 0.815);
