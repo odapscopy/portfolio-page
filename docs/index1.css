@@ -26,12 +26,20 @@ body {
   background: whitesmoke;
   background-color: #c7c7c7;
   background-color: #eee6e6;
+  max-width: 100%;
 
   @media (max-width: 60em) {
     background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
   }
   overflow-x: hidden;
   width: 100%;
+}
+
+/* Quick mobile page fixes */
+header {
+  @media (max-width: 30em) {
+    width: 100%;
+  }
 }
 
 main {
@@ -44,7 +52,7 @@ main {
     }
     @media (max-width: 30em) {
       width: 98.6vw;
-      width: 100%;
+      width: 98.6%;
       /*max-width: 100vw;*/
     }
 }
