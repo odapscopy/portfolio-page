@@ -44,8 +44,10 @@ main {
     /*max-width: 100%;*/
 
     @media (max-width: 30em) {
+      width: 100vw;
       max-width: 96.5vw;
       max-width: 99vw;
+      max-width: 100vw;
       background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
     }
 
