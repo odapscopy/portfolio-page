@@ -350,8 +350,7 @@ header h3 {
       /*margin-right: -0.19em;*/
       border: none;
       float: right; /* or right? */
-      margin: auto;
-      padding: auto;
+      align-items: center;
     }
 
     header {
