@@ -349,6 +349,7 @@ header h3 {
     @media (max-width: 30em) {
       /*margin-right: -0.19em;*/
       border: none;
+      float: right; /* or right? */
     }
 
     header {
