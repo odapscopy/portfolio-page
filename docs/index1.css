@@ -43,8 +43,9 @@ main {
     background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
     /*max-width: 100%;*/
 
-    @media (max-width: 60em) {
+    @media (max-width: 30em) {
       max-width: 96.5vw;
+      background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
     }
 
     overflow-x: hidden
