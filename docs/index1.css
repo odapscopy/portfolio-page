@@ -21,32 +21,34 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  font-family: Arial;
-  font-size: 16px;
-  background: whitesmoke;
-  background-color: #c7c7c7;
-  background-color: #eee6e6;
-  max-width: 100%;
-
-  @media (max-width: 60em) {
-    background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
-  }
-  overflow-x: hidden;
-  width: 99%;
+  padding: 0;
+  margin: 0;
 }
 
 main {
-    width: 99vw; /* I suspect this is redundant */
-    width: 100%;
+    /*width: 99vw;*/ /* I suspect this is redundant */
+    /*width: 100%;*/
     /*height: 100vh;*/ /* I suspect that this is redundant */
 
     @media (min-width: 60em) {
       width: 100vw;
       width: 100%;
     }
-    @media (max-width: 30em) {
-      width: 99%;
+
+    font-family: Arial;
+    font-size: 16px;
+    /*background: whitesmoke;
+    background-color: #c7c7c7;
+    background-color: #eee6e6;*/
+    background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
+    /*max-width: 100%;*/
+
+    @media (max-width: 60em) {
+      max-width: 96.5vw;
     }
+
+    overflow-x: hidden
+    
 }
 header h3 {
   color: rgba(0, 0, 0, 0.646);
