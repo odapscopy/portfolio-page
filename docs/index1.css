@@ -41,16 +41,6 @@ main {
     overflow-x: hidden;
 }
 
-header {
-  @media (max-height: 30em) {
-    margin-top: 7vh;
-  }
-}
-header h3 {
-  color: rgba(0, 0, 0, 0.646);
-  font-weight: 700;
-  margin-bottom: 14px;
-}
 .sidebar {
   position: fixed;
   width: 19.6%;
@@ -273,14 +263,9 @@ header h3 {
 .page-view {
     position: relative;
     border: 1px solid black;
-    /*width: 75%;*/
     width: 79%;
     float: right;
-    /*scroll-behavior: smooth;*/
-    /*margin-top: 5vh;*/
     margin-top: 0vh; /* redundant code though */
-    /*height: 100vh;*/
-    background: linear-gradient(122deg, whitesmoke 0%, rgb(22, 66, 52, 70%) 4%, whitesmoke 100%);
     background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
 
     @media (max-width: 60em) {
@@ -293,7 +278,6 @@ header h3 {
     }
     /* BAD CODE? */
     @media (max-width: 30em) {
-      /*margin-right: -0.19em;*/
       border: none;
       float: right; /* or right? */
       align-items: center;
@@ -307,7 +291,6 @@ header h3 {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      /*background-color: white;*/
 
       @media (max-width: 60em) {
         margin-top: 0;
@@ -315,6 +298,10 @@ header h3 {
 
       @media (max-width: 30em) {
         border-right: none;
+      }
+
+      @media (max-height: 30em) {
+        margin-top: 7vh;
       }
     }
 
@@ -337,6 +324,9 @@ header h3 {
     }
 
     header h3 {
+      color: rgba(0, 0, 0, 0.646);
+      font-weight: 700;
+      margin-bottom: 14px;
       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
