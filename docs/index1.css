@@ -33,18 +33,17 @@ main {
     @media (max-width: 30em) {
       width: 100vw;
       max-width: 100vw;
-      background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
     }
 
     font-family: Arial;
     font-size: 16px;
     background: linear-gradient(122deg, whitesmoke 0%, #abe5d2b3 4%, whitesmoke 100%);
-    overflow-x: hidden    
+    overflow-x: hidden;
 }
 
 header {
   @media (max-height: 30em) {
-    margin-top: 3vh;
+    margin-top: 7vh;
   }
 }
 header h3 {
@@ -77,20 +76,6 @@ header h3 {
     height: 22.5vh;
   }
 }
-.nav {
-  position: relative;
-  margin: 0 10%; /* control this value to decide how big the red border should be*/
-  text-align: right;
-  /*top: 50%;
-  top: 40%;
-  top: 5%;*/
-  /*transform: translateY(-50%);*/
-  /*top: 46%;*/
-  top: 3%;
-  font-weight: bold;
-  /*border: 1px solid red;*/
-}
-
 /* This is mobile navigation code*/
 .nav {
 
@@ -119,13 +104,10 @@ header h3 {
           #menuToggle input
           {
             display: flex;
-            width: 40px;
             height: 32px;
-            /*width: 80px;
-            height: 64px;*/
             width: 32px;
-            margin-top: -12px; /* mobile menu fix */
-            margin-left: -3px; /* mobile menu fix */
+            margin-top: -12px; /* mobile menu hamburger highlight fix */
+            margin-left: -3px; /* mobile menu hamburger hightlight fix */
             position: absolute;
             cursor: pointer;
             opacity: 0;
@@ -217,8 +199,7 @@ header h3 {
 .nav ul li {
   position: relative;
   margin: 3.2em 0;
-  /*border: 2px solid #36383F;
-  border: 2px solid #85888C;*/
+  /*border: 2px solid #85888C;*/
   padding-right: 4px;
   margin-bottom: 20px;
   @media (max-width: 60em) {
@@ -227,20 +208,13 @@ header h3 {
   }
 }
 .nav ul li a {
-  line-height: 5em;
   line-height: 3.5em;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.4em;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.35);
-  color: green;
-  color: olive;
-  color: rgba(128, 128, 0, 0.618);
   color: white;
   opacity: 0.8;
   display: block;
-  font-size: 12px;
   font-size: 18px;
   transition: all ease-out 300ms;
   @media (max-width: 60em) {
@@ -251,22 +225,14 @@ header h3 {
   }
 }
 .nav ul li a.active {
-  color: greenyellow;
-  color: green;
   color: white;
   opacity: 1;
   font-size: 18.5px;
-  /*opacity: 0.6;*/
-  /*opacity: 0.8;*/
+
   @media (max-width: 60em) {
-    color: green;
-    /*opacity: 0.6;*/
     color:  #36383F;
     font-size: 12.5px;
   }
-  /*@media (min-width: 60em) {
-    color: white;
-  }*/
 }
 .nav ul li a.active::after {
   content: '';
@@ -287,9 +253,6 @@ header h3 {
   opacity: 0.6;
 }
 .nav ul li:not(.active):hover a {
-  /*color: rgba(255, 255, 255, 0.75);
-  color: gray;
-  color: #36383F;*/
   color: white;
   opacity: 1;
   @media (max-width: 60em) {
