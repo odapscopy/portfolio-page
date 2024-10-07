@@ -514,6 +514,10 @@ main {
       height: 180px;
       margin: 0 -15px;
       mix-blend-mode: multiply;
+
+      @media (max-width: 30em) {
+        padding: 25px;
+      }
     }
     .circle-1 {
       background: #f66;
@@ -726,6 +730,7 @@ main {
       border: 1px solid black;
       border-left: none;
       margin-top: 10vh;
+      padding-bottom: 8vh;
 
       @media (max-width: 30em) {
         border-right: none;
@@ -756,11 +761,15 @@ main {
       margin-top: 1em;
       margin-bottom: 3.5em;
       font-size: 17.5px;
+      font-size: 16.5px;
     }
 
     article {
       border: 1px solid black; /* change color */
+      border: 1px solid rgba(0, 0, 255, 0.404);
       border-bottom: 1px solid rgba(165, 42, 42, 0.52); /* change color */
+      border-bottom: 1px solid rgba(0, 0, 0, 0.665);
+      border-bottom: 1px solid rgba(0, 0, 255, 0.404);
       border-radius: 4px;
       width: 80%;
       /*display: flex;*/ /* New code */
@@ -769,20 +778,24 @@ main {
       text-align: justify;
       margin: auto;
       padding: 20px;
+      min-height: 15vh;
 
       @media (max-width: 30em) {
-        padding: 40px;
-        padding: 20px; /* new code */
         font-size: 17.5px;
       }
+
+      @media (min-width: 60em) {
+        line-height: 4.2vh;
+      }
+    }
+    .caption-heading {
+      margin-bottom: 1vh;
+      color: #85888C;
+      color: #404954;
+      font-style: bold;
     }
     .container-4 p {
       color: black;
-      /*border: 1px solid red;*/ /* remove later */
-      /* New code */
-      /*@media (max-width: 30em) {
-        padding: 10px;
-      }*/
     }
   
 
