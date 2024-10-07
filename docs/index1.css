@@ -762,20 +762,28 @@ main {
       border: 1px solid brown; /* remove later */
       border-bottom: 1px solid rgba(165, 42, 42, 0.52); /* change color */
       border-radius: 4px;
+      width: 100%; /* new code */
       width: 80%;
-      width: 100%;
+      display: flex; /* New code */
+      justify-content: center; /* New code */
+      align-items: center; /* New code */
       text-align: justify;
       margin: auto;
       padding: 20px;
 
       @media (max-width: 30em) {
         padding: 40px;
+        padding: 20px; /* new code */
         font-size: 17.5px;
       }
     }
     .container-4 p {
       color: black;
       border: 1px solid red; /* remove later */
+      /* New code */
+      @media (max-width: 30em) {
+        padding: 10px;
+      }
     }
   
 
