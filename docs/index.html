@@ -315,8 +315,13 @@
                         CONTACT FORM
                     </div>
                     <form class="feedback-body" action="https://formspree.io/f/xdkonvpz" method="POST">
-                        <input ,type="email" class="feedback-body__email" placeholder="Email" />
-                        <textarea ,type="text" class="feedback-body__message" placeholder="Message"></textarea>
+                        <!--<label>-->
+                        <input ,type="email" name="email" class="feedback-body__email" placeholder="Email" />
+                        <!--</label>-->
+                        <!--<label>-->
+                        <textarea name="message" type="text" class="feedback-body__message"
+                            placeholder="Message"></textarea>
+                        <!--</label>-->
                         <button class="feedback-body__submit" type="submit">SEND</button>
                     </form>
                 </div>
